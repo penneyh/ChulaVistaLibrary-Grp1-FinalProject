@@ -6,6 +6,6 @@ Group 1:
 
 Penney Holland
 
-Maria O'Campo-Ross
+Maria Ocampo-Ross
 
 Tiffany Poon
