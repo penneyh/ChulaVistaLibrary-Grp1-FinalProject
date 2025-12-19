@@ -1,0 +1,5 @@
+:root {
+    --main-fonts: Verdana, Arial sans-serif;
+    --headline-fonts: Cambria, Verdana, sans-serif;
+}
+html { font-size: 10px; }
