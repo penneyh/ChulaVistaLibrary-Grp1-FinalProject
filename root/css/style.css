@@ -1,5 +1,37 @@
+/* global variables */
 :root {
-    --main-fonts: Verdana, Arial sans-serif;
-    --headline-fonts: Cambria, Verdana, sans-serif;
+    --main-font: Verdana, Arial sans-serif;
+    --headline-font: Cambria, Georgia, sans-serif;
+    --primary-color: #19457f;
+    --secondary-color: #8ea499;
+    --tertiary-color: #cb6f18;
+    --border-radius: 6px;
 }
+
+/* main styles */
 html { font-size: 10px; }
+
+h1 { font-size: 3rem; 
+    margin-bottom: 5px;
+}
+
+h2 {
+    font-size: 2.5rem;
+    margin-bottom: 5px;
+}
+
+p { font-size: 1.6rem; }
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+a {
+    color: purple; /* change to default color at later time */
+}
+
+a:hover {
+    text-decoration: none;
+    color: red; /* change to default color at later time */
+}
