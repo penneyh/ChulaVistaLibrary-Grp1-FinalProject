@@ -11,12 +11,15 @@
 /* main styles */
 html { font-size: 10px; }
 
-h1 { font-size: 3rem; 
+h1 { 
+    font-size: 3rem; 
+    color: var(--headline-font);
     margin-bottom: 5px;
 }
 
 h2 {
     font-size: 2.5rem;
+    color: var(--headline-font);
     margin-bottom: 5px;
 }
 
@@ -35,3 +38,141 @@ a:hover {
     text-decoration: none;
     color: red; /* change to default color at later time */
 }
+
+/* header */
+header h1 { margin-bottom: 0; }
+
+/* navigation */
+nav {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    background-color: var(--primary-color);
+}
+
+nav ul {
+    font-size: 1.8rem;
+    display: none;
+}
+
+nav li {
+    text-align: center;
+    border-bottom: solid 1px #fff;
+}
+
+nav li:first-child {
+    border-top: solid 1px #fff;
+}
+
+nav a {
+    color: #fff;
+    padding: .8em;
+    text-decoration: none;
+    display: block;
+}
+
+nav a:hover {
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+}
+
+nav a.onPage { color: #fff; }
+nav a.onPage:hover { background-color: red; }
+
+.showMenu {
+    color: #fff;
+    text-align: right;
+    padding: .3em .7em 1.6em .3em;
+    display: block;
+    cursor: pointer;
+    font-size: 2rem;
+    padding-top: .8em;
+    height: 30px;
+}
+
+nav input[type=checkbox]:checked ~ ul { display: block; }
+
+nav input[type=checkbox] { display: none; }
+
+
+/* main */
+main {margin: 1.6rem 1rem 1rem; }
+
+article h2 {
+    margin-bottom: .6em;
+    padding-bottom: .1em;
+    border-bottom: solid 1px #ccc;
+}
+
+
+/* footer */
+footer {
+    background-color: #cb6f18;
+    color: var(--primary-color);
+    font-size: .8em;
+    padding: 10px;
+    text-align: center;
+    /*position: sticky;*/
+    bottom: 0;
+}
+
+footer p {
+    margin-bottom: 0;
+}
+
+.f2 {
+    margin-bottom: 1em;
+}
+.f1 {
+    font-size: 3rem;
+    color: var(--primary-color);
+}
+
+footer li {
+    color: var(--primary-color);
+    display: inline-block;
+    margin-bottom: 1em;
+}
+
+.locations {
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-align: left;
+    padding: 10px;
+    margin-bottom: .8em;
+}
+.c1 {
+    font-size: 2rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+}
+
+footer a {
+    text-decoration: none;
+    color: var(--primary-color);
+    
+}
+
+.copy { 
+    padding: 10px;
+    font-size: 2rem;
+}
+
+@media screen and (min-width: 725px) {
+    /* nav */
+    .showMenu { display: none; }
+    nav ul { 
+        display: flex;
+        justify-content: center;
+        gap: 1rem;
+    }
+    nav li { border: none!important; }
+    .onRight {
+        float: right;
+        padding-left: 1rem;
+    }
+    
+    
