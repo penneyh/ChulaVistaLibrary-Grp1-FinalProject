@@ -5,6 +5,7 @@
     --primary-color: #19457f;
     --secondary-color: #8ea499;
     --tertiary-color: #cb6f18;
+    --quaternary-color: #8ea499;
     --border-radius: 6px;
 }
 
@@ -35,3 +36,79 @@ a:hover {
     text-decoration: none;
     color: red; /* change to default color at later time */
 }
+
+/*services page*/
+
+.servHero {
+    background: url('../images/servicesHerosml2.jpg') center center / cover no-repeat;
+    /*
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    */
+    max-width: 100%;
+    min-height: 400px;
+    margin: auto;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 8px 10px -8px rgba(0,0,0,0.7);
+}
+
+.headerContainer h1 {
+    color: var(--primary-color);
+    text-align: center;
+    padding: 10px 0;
+    background-color: var(--tertiary-color);
+    position: relative;
+}
+/*Services page links*/
+.volunteer {
+    width: 200px;
+    height: 150px;
+    background-color: var(--quaternary-color);
+    display: flex;
+    justify-content: center;
+    margin: 30px;
+}
+.volunteer img {
+    padding-top: 20px;
+}
+.volunteer h3 {
+    text-align: center;
+    font-size: 2rem;
+    padding-top: 5px;
+}
+.volunteer a {
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+@media screen and (min-width: 725px) {
+    .servHero {
+        background-image: url('../images/servicesHero.jpg');
+    }
+    .volunteer {
+        width: 300px;
+        height: 200px;
+        
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
