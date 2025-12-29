@@ -121,7 +121,7 @@ nav input[type=checkbox] { display: none; }
     padding-bottom: 10px;
     background-color: var(--tertiary-color);
 }
-/*Services page links*/
+/*Services page links MOR*/
 #services {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -148,17 +148,22 @@ nav input[type=checkbox] { display: none; }
     text-align: center;
     font-size: 2rem;
     padding-top: 10px;
-}
-#hSchool {
-    font-size: 1.5rem;
-}
-#career {
-    margin-left: 7px;
+    font-weight: bold;
+    
 }
 .containerServ a {
     color: var(--primary-color);
     text-decoration: none;
 }
+#hSchool {
+    font-size: 1.5rem;
+}
+/*
+#career {
+    margin-left: 7px;
+}
+*/
+
 
 
 /*footer*/
@@ -235,6 +240,7 @@ footer p:first-child {
         width: 100%;
         height: 300px;    
     }
+    /*service page MOR*/
     #services {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
@@ -250,6 +256,7 @@ footer p:first-child {
         height: 200px;
         margin-top: 20px;
     }
+    /*footer*/
     footer {
         display: flex;
         padding-bottom: 0;
@@ -306,6 +313,7 @@ footer p:first-child {
         padding-left: 30px;
         margin-left: 20px;
     }
+    /*services page MOR*/
     #services {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr;
