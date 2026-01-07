@@ -12,12 +12,21 @@
 
 html { font-size: 10px; }
 
-h1 { font-size: 3rem; 
+h1 { 
+    font: 3rem var(--main-font); 
     margin-bottom: 5px;
 }
-
-h2 {
-    font-size: 2.5rem;
+h2 { 
+    font: 2.5rem var(--headline-font);
+    margin-bottom: 5px;
+}
+h3 { 
+    font-size: 2rem; 
+    margin-bottom: 5px;
+}
+h4 { 
+    font-size: 1.4rem;
+    font-weight: bold;
     margin-bottom: 5px;
 }
 
@@ -30,7 +39,7 @@ img {
 
 a {
     text-decoration: none;
-    color: inherit;
+    color: darkgreen;
 }
 
 a:hover {
@@ -130,7 +139,7 @@ footer .logo {
     text-align: start;
     padding: 25px 10px 0;
 }
-footer h3 {
+footer h4 {
     text-align: left;
     padding: 25px 0 0 10px;
 }
@@ -139,6 +148,7 @@ footer h3 {
     vertical-align: middle;
 }
 footer a {
+    color: var(--primary-color);
     font-weight: bold;
 } 
 footer ul {
@@ -151,6 +161,8 @@ footer p {
     font-size: 1.4rem;
     text-align: start;
     padding: 0 15px;
+    line-height: 1.4;
+    margin-bottom: 1.4em;
 }
 footer p:first-child {
     padding-top: 15px;
@@ -164,6 +176,21 @@ footer p:first-child {
 /* tablet */
 
 @media screen and (min-width: 700px) {
+    nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+    }
+    .showMenu { display:none; }
+    nav ul {
+        display: flex;
+        justify-content: flex-end;
+        align-items: baseline;
+    }
+    nav li {
+        border: none!important; 
+        padding-right: 15px;
+    }
     #hero {
         background-image: url(../images/south-large.jpg);
         background-position: center;
@@ -200,25 +227,6 @@ footer p:first-child {
 /* desktop */
 
 @media screen and (min-width: 1000px) {
-    nav {
-        display: flex;
-        justify-content: space-between;
-        align-items: flex-end;
-    }
-    .showMenu { display:none; }
-    nav ul {
-        display: flex;
-        justify-content: flex-end;
-        align-items: baseline;
-    }
-    nav li {
-        border: none!important; 
-        padding-right: 15px;
-    }
-    .onRight {
-        float: right;
-        padding-left: 1rem;
-    }
     #hero { height: 400px; }
     #darkfooter {
         margin-right: 15px;
