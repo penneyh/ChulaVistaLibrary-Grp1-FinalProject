@@ -25,6 +25,11 @@ h2 {
     margin-bottom: 5px;
 }
 
+h3 {
+    font-size: 2rem;
+    margin-bottom: 5px;
+}
+
 p { font-size: 1.6rem; }
 
 img {
@@ -34,7 +39,7 @@ img {
 
 a {
     text-decoration: none;
-    color: inherit;
+    color: darkgreen;
 }
 
 a:hover {
@@ -108,8 +113,31 @@ main {
     margin: auto;
 }
 
+/* contact table */
+.contactTable { 
+    font-size: 1.6rem;
+    padding: 10px; 
+    margin: 20px 0; 
+}
+.contactTable th {
+    font-size: 2rem;
+    font-weight: 600;
+    color: var(--primary-color);
+    text-align: left;
+    padding: 6px;
+}
+.contactTable td {
+    padding: 6px;
+    text-align: left;
+    vertical-align: top;
+    width: 50%;
+}
 /* contact page form styles */
 
+.contactForm {
+    padding: 10px;
+    margin: 10px 0;
+}
 fieldset {
     padding: 1em;
     margin: 2em 0;
