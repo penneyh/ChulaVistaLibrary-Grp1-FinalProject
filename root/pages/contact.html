@@ -4,7 +4,7 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Chula Vista Library - Homepage</title>
+        <title>Chula Vista Library - Contact Us</title>
         <!-- material icons -->
 	<!-- an error is popping up on the validator for the line below -->
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp"
@@ -28,8 +28,8 @@
                <input type="checkbox" id="showMenu" role="button">
                 <ul>
                     <li><a href="../index.html">Home</a></li>
-                    <li><a href="#">Catalog</a></li>
-                    <li><a href="#">Calendar</a></li>
+                    <li><a href="catalog.html">Catalog</a></li>
+                    <li><a href="calendar.html">Calendar</a></li>
                     <li><a href="services.html">Services</a></li>
                     <li><a href="#"><img src="../images/user.svg" alt="user icon" id="user">My Account</a></li>
                 </ul>
@@ -50,7 +50,6 @@
      
         
         <main>
-            
             <section>
                 <table class="contactTable">
                    <thead>
@@ -86,17 +85,17 @@
                    </tbody>
                 </table>
                </section>
-               <section>
+               <section class="contactLocation">
                    <h3><a href="locations.html">Locations & Hours</a></h3>
                    <h3><a href="#">Holiday Closures</a></h3>
                </section>
                <section class="contactForm">
                    <h3>Please contact us with any comments or questions by filling out the form below.</h3>
-               
+			
                 <!-- form -->
                 <form action="mailto:penneyh@gmail.com" method="post" id="saveForm">
-                   <fieldset>
-                   <legend>Contact Information</legend>
+                   <fieldset class="contactFieldset">
+                   <legend class="contactLegend">Contact Information</legend>
                     <label for="first_name">First Name: </label>
                     <input type="text" id="first_name" name="first_name" value="" placeholder="Your First Name" required autofocus>*
                     
@@ -116,11 +115,11 @@
                     <input type="text" id="phone" name="phone" value="" placeholder="(___)___-____">    
                     </fieldset>
                     
-                    <fieldset>
-                        <legend>Comments/Questions</legend>
-                        <label for="type" id="textArea">Type of Comments/Question:*</label>
+                    <fieldset class="contactFieldset">
+                        <legend class="contactLegend">Comments/Questions</legend>
+                        <label for="type" id="contactTextArea">Type of Comments/Question:*</label>
                         <p></p>
-                        <select id="type" name="type" size="1" required>
+                        <select id="commentType" name="type" size="1" required>
                             <option value="select_type">Select a type:</option>
                             <option value="Animal Inquiries">Animal Inquiries</option>
                             <option value="Building Permits">Building Permits</option>
@@ -133,14 +132,14 @@
                         
                        <p></p>
                         
-                        <label for="message" id="comments">Comments/Questions:*</label>
-                        <textarea name="message" id="message" placeholder="Write your message here please" required></textarea>
+                        <label for="message" id="contactComments">Comments/Questions:*</label>
+                        <textarea name="message" id="contactMessage" placeholder="Write your message here please" required></textarea>
                     </fieldset>
                     
-                    <input type="submit" id="submit" name="submit" value="Submit">
+                    <input type="submit" id="contactSubmit" name="submit" value="Submit">
                     
                 </form>
-            </section>    
+             </section>   
         </main>
             
         <div class="clearIt"></div>    
@@ -155,7 +154,7 @@
                     <li><a href="#"><img src="../images/x.svg" alt="x icon" class="social"></a></li>
                 </ul>
             </section>
-            <h3>Locations:</h3>
+            <h4>Locations:</h4>
             <section id="lightfooter">
                 <img src="../images/location.svg" alt="location pin" class="pin">
                 <ul>
