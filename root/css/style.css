@@ -9,18 +9,36 @@
 }
 
 /* main styles */
+
 html { font-size: 10px; }
 
-h1 { font-size: 3rem; 
+h1 { 
+    font: 3rem var(--main-font); 
     margin-bottom: 5px;
 }
-
-h2 {
-    font-size: 2.5rem;
+h2 { 
+    font: 2.5rem var(--headline-font);
+    margin-bottom: 5px;
+}
+h3 { 
+    font-size: 2rem; 
+    margin-bottom: 5px;
+}
+h4 { 
+    font-size: 1.4rem;
+    font-weight: bold;
     margin-bottom: 5px;
 }
 
 p { font-size: 1.6rem; }
+
+figcaption {
+    color: #000;
+    font-size: 1.4em;
+    font-style: italic;
+    text-align: center;
+    margin: .5em;
+}
 
 img {
     max-width: 100%;
@@ -28,10 +46,334 @@ img {
 }
 
 a {
-    color: purple; /* change to default color at later time */
+    text-decoration: none;
+    color: darkgreen;
 }
 
 a:hover {
-    text-decoration: none;
-    color: red; /* change to default color at later time */
+    color: red;
+    opacity: 0.8;
+} 
+
+/* header */
+
+header {
+    background-size: cover;
+    color: #fff;
+}
+.logo {
+    height: 70px;
+}
+
+/* navigation */
+
+nav {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    background-color: var(--primary-color);
+}
+nav section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav ul {
+    font-size: 1.4rem;
+    list-style-type: none;
+    display: none;
+}
+nav li {
+    text-align: center;
+    border-bottom: solid 1px #fff;
+    vertical-align: middle;
+}
+nav li:first-child {
+    border-top: solid 1px #fff;
+}
+nav a {
+    color: #fff;
+    padding: .8em;
+    display: block;
+}
+#user {
+    height: 2rem;
+    vertical-align: middle;
+}
+.showMenu {
+    color: #fff;
+    text-align: right;
+    padding: .3em .7em 1.6em .3em;
+    display: block;
+    cursor: pointer;
+    font-size: 2rem;
+    padding-top: .8em;
+    height: 36px;
+}
+nav input[type=checkbox]:checked ~ ul {display: block;
+}
+nav input[type=checkbox] { display: none; }
+
+/* hero */
+
+#hero {
+    background-image: url(../images/south-small.jpg);
+    height: 25vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+/* motto */
+
+#motto {
+    background-color: var(--primary-color);
+    color: #fff;
+    font-style: italic;
+    text-align: center;
+    padding: 15px;
+}
+
+/* main */
+
+main {
+    padding-top: 70px;
+}
+main h2 { 
+    font-size: 1.6rem; 
+    font-weight: bold;
+    background-color: var(--secondary-color);
+    padding: 10px 0;
+    text-align: center;
+}
+main h3 {
+    background-color: var(--primary-color);
+    font: 10px var(--headline-font);
+    font-size: 1.4rem;
+    color: #fff;
+    font-style: italic;
+    text-align: center;
+    padding: 20px;
+}
+
+/* login page */
+
+/* bordered form */
+
+#login {
+    border: 3px solid #f1f1f1;
+}
+
+#userlogin h1 {
+    padding-bottom: 15px;
+}
+
+#create {
+    display: block;
+    float: none;
+}
+
+/* full width username and password inputs */
+
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    border-radius: 4px;
+}
+
+/* buttons */
+
+button {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    border-radius: 4px;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+/* cancel button */
+
+#cancel {
+  width: 100%;
+  padding: 10px 18px;
+  background-color: #f44336;
+}
+
+/* center user icon image */
+#icon {
+    text-align: center;
+    margin: 24px 0 12px 0;
+}
+
+/* avatar image */
+#usericon {
+    filter: brightness(50%);
+    width: 20%;
+    border-radius: 50%;
+}
+
+/* container padding */
+#userlogin {
+  padding: 16px;
+}
+
+/* forgot password */
+#forgotusername, #forgotpassword {
+    display: block;
+    float: none;
+    padding-top: 10px;
+}
+
+.help {
+    background-color: #f1f1f1;
+    padding: 15px;
+}
+
+
+/*footer*/
+
+footer {
+    background-color: var(--tertiary-color);
+    color: var(--primary-color);
+    font-size: 1rem;
+    text-align: center;
+    padding-bottom: 10px;
+}
+#darkfooter {
+    background-color: #c35f1c;
+}
+footer .logo {
+    height: 90px;
+    display: block;
+    margin: auto;
+    padding: 0 1rem 0 0;
+}
+#socials {
+    display: flex;
+    justify-content: space-around;
+    padding: 10px 5px 20px;
+}
+.social {
+    height: 25px;
+}
+#lightfooter {
+    display: grid;
+    grid-template-columns: 1fr 7fr 1fr 7fr;
+    text-align: start;
+    padding: 25px 10px 0;
+}
+footer h4 {
+    text-align: left;
+    padding: 25px 0 0 10px;
+}
+.pin {
+    height: 20px;
+    vertical-align: middle;
+}
+footer a {
+    color: var(--primary-color);
+    font-weight: bold;
+} 
+footer ul {
+    padding: 0 5px 20px 0;
+    list-style-type: none;
+}
+footer li:first-child {
+    padding: 0 0 10px;
+}
+footer p {
+    text-align: start;
+    padding: 0 15px;
+    line-height: 1.4;
+    margin-bottom: 1.4em;
+}
+footer p:first-child {
+    padding-top: 15px;
+}
+#copyright {
+    font-size: 1rem;
+    text-align: center;    
+}
+
+/*button size changes */
+@media screen and (min-width: 400px) {
+    #cancel {
+        width: auto;
+    }
+    #forgotusername, #forgotpassword {
+        float: right;
+        padding-left: 15px;
+    }
+}
+    
+/* tablet */
+@media screen and (min-width: 700px) {
+    nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+    }
+    .showMenu { display:none; }
+    nav ul {
+        display: flex;
+        justify-content: flex-end;
+        align-items: baseline;
+    }
+    nav li {
+        border: none!important; 
+        padding-right: 15px;
+    }
+    #hero {
+        height: 25vh;
+    }
+    footer {
+        display: flex;
+        padding-bottom: 0;
+    }
+    #darkfooter {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        }
+    footer section:last-child {
+        align-content: center;
+        text-align: left;
+        margin: 20px 0;
+        padding-left: 10px;
+        border-left: solid 1px var(--primary-color);
+    }
+    footer p:first-child {
+        padding-top: 0;
+    }
+    #copyright {
+        text-align: left;
+    }
+}
+
+/* desktop */
+@media screen and (min-width: 1000px) {
+    #hero {
+        background-image: url(../images/south-large.jpg);
+        height: 20vh;
+    }
+    #darkfooter {
+        margin-right: 15px;
+    }
+    #lightfooter { grid-template-columns: 1fr 8fr 1fr 7fr; }
+    footer section:last-child {
+        padding-left: 30px;
+        margin-left: 20px;
+    }
 }
