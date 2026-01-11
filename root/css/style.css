@@ -284,9 +284,11 @@ textarea {
     font-weight: 600;
 }
 
+/* fixed icon alignment ------------------------------------- ADD ME! */
 .mapIcon {
     color: var(--primary-color);
     font-size: 20px;
+    vertical-align: text-bottom;
 }
 
 .locationsHR {
